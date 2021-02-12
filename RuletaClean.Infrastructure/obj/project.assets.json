@@ -7159,25 +7159,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Administrador\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\ProjectSupport\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Administrador\\source\\repos\\ApiRuletaClean\\RuletaClean.Infrastructure\\RuletaClean.Infrastructure.csproj",
+      "projectUniqueName": "C:\\Users\\ProjectSupport\\source\\repos\\ApiRestRuleta\\RuletaClean.Infrastructure\\RuletaClean.Infrastructure.csproj",
       "projectName": "RuletaClean.Infrastructure",
-      "projectPath": "C:\\Users\\Administrador\\source\\repos\\ApiRuletaClean\\RuletaClean.Infrastructure\\RuletaClean.Infrastructure.csproj",
-      "packagesPath": "C:\\Users\\Administrador\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Administrador\\source\\repos\\ApiRuletaClean\\RuletaClean.Infrastructure\\obj\\",
+      "projectPath": "C:\\Users\\ProjectSupport\\source\\repos\\ApiRestRuleta\\RuletaClean.Infrastructure\\RuletaClean.Infrastructure.csproj",
+      "packagesPath": "C:\\Users\\ProjectSupport\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ProjectSupport\\source\\repos\\ApiRestRuleta\\RuletaClean.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Administrador\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\ProjectSupport\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"
@@ -7190,8 +7185,8 @@
         "netstandard2.0": {
           "targetAlias": "netstandard2.0",
           "projectReferences": {
-            "C:\\Users\\Administrador\\source\\repos\\ApiRuletaClean\\RuletaClean.Core\\RuletaClean.Core.csproj": {
-              "projectPath": "C:\\Users\\Administrador\\source\\repos\\ApiRuletaClean\\RuletaClean.Core\\RuletaClean.Core.csproj"
+            "C:\\Users\\ProjectSupport\\source\\repos\\ApiRestRuleta\\RuletaClean.Core\\RuletaClean.Core.csproj": {
+              "projectPath": "C:\\Users\\ProjectSupport\\source\\repos\\ApiRestRuleta\\RuletaClean.Core\\RuletaClean.Core.csproj"
             }
           }
         }
@@ -7243,7 +7238,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
       }
     }
   }

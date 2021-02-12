@@ -8,9 +8,10 @@ namespace RuletaClean.Core.Interfaces
 {
     public interface IApuestaRepository
     {
-        Task<string> InsertApuestas(Apuesta apuesta);
-        
+        Task InsertApuestas(Apuesta apuesta);
         Task<IEnumerable<Apuesta>> SelectApuestaByRuleta(int id_ruleta);
-
+        Task<IEnumerable<Apuesta>> SelectGanadorNumero(string numero_ganador, int id_ruleta);
+        Task<IEnumerable<Apuesta>> SelectGanadorColor(string color_ganador, int id_ruleta);
+        Task UpdateGanador(int id, Apuesta apuesta);
     }
 }

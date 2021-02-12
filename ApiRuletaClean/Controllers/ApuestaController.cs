@@ -15,19 +15,19 @@ namespace RuletaClean.Api.Controllers
     [ApiController]
     public class ApuestaController : ControllerBase
     {
-        private readonly IApuestaRepository _apuestaRepository;
+        private readonly IApuestaService _apuestaService;
         private readonly IMapper _mapper;
 
-        public ApuestaController(IApuestaRepository apuestaRepository, IMapper mapper)
+        public ApuestaController(IApuestaService apuestaService, IMapper mapper)
         {
-            _apuestaRepository = apuestaRepository;
+            _apuestaService = apuestaService;
             _mapper = mapper;
         }
 
         [HttpGet("{id}")]
         public async Task<IActionResult> CerrarApuestaById(int id)
         {
-            var apuesta = await _apuestaRepository.SelectApuestaByRuleta(id);
+            var apuesta = await _apuestaService.SelectApuestaByRuleta(id);
             var apuestaDto = _mapper.Map<IEnumerable<ApuestaDto>>(apuesta);
             var resp = new ApiResponses<IEnumerable<ApuestaDto>>(apuestaDto);
             return Ok(resp);
@@ -37,9 +37,8 @@ namespace RuletaClean.Api.Controllers
         {
             var apuesta = _mapper.Map<Apuesta>(apuestaDto);
             apuesta.id_usuario = id_usuario;
-            var respuesta = await _apuestaRepository.InsertApuestas(apuesta);
-            var resp = new ApiResponses<string>(respuesta);
-            return Ok(resp);
+            await _apuestaService.InsertApuestas(apuesta);
+            return Ok();
         }
     }
 }

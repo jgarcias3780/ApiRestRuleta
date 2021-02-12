@@ -7,3 +7,12 @@ C:\Users\Administrador\source\repos\ApiRuletaClean\RuletaClean.Core\obj\Debug\ne
 C:\Users\Administrador\source\repos\ApiRuletaClean\RuletaClean.Core\obj\Debug\netstandard2.0\RuletaClean.Core.csproj.CoreCompileInputs.cache
 C:\Users\Administrador\source\repos\ApiRuletaClean\RuletaClean.Core\obj\Debug\netstandard2.0\RuletaClean.Core.dll
 C:\Users\Administrador\source\repos\ApiRuletaClean\RuletaClean.Core\obj\Debug\netstandard2.0\RuletaClean.Core.pdb
+C:\Users\ProjectSupport\Source\Repos\ApiRestRuleta\RuletaClean.Core\bin\Debug\netstandard2.0\RuletaClean.Core.deps.json
+C:\Users\ProjectSupport\Source\Repos\ApiRestRuleta\RuletaClean.Core\bin\Debug\netstandard2.0\RuletaClean.Core.dll
+C:\Users\ProjectSupport\Source\Repos\ApiRestRuleta\RuletaClean.Core\bin\Debug\netstandard2.0\RuletaClean.Core.pdb
+C:\Users\ProjectSupport\Source\Repos\ApiRestRuleta\RuletaClean.Core\obj\Debug\netstandard2.0\RuletaClean.Core.csprojAssemblyReference.cache
+C:\Users\ProjectSupport\Source\Repos\ApiRestRuleta\RuletaClean.Core\obj\Debug\netstandard2.0\RuletaClean.Core.AssemblyInfoInputs.cache
+C:\Users\ProjectSupport\Source\Repos\ApiRestRuleta\RuletaClean.Core\obj\Debug\netstandard2.0\RuletaClean.Core.AssemblyInfo.cs
+C:\Users\ProjectSupport\Source\Repos\ApiRestRuleta\RuletaClean.Core\obj\Debug\netstandard2.0\RuletaClean.Core.csproj.CoreCompileInputs.cache
+C:\Users\ProjectSupport\Source\Repos\ApiRestRuleta\RuletaClean.Core\obj\Debug\netstandard2.0\RuletaClean.Core.dll
+C:\Users\ProjectSupport\Source\Repos\ApiRestRuleta\RuletaClean.Core\obj\Debug\netstandard2.0\RuletaClean.Core.pdb

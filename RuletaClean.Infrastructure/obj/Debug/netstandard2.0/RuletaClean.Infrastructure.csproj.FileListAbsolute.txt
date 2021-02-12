@@ -10,3 +10,15 @@ C:\Users\Administrador\source\repos\ApiRuletaClean\RuletaClean.Infrastructure\ob
 C:\Users\Administrador\source\repos\ApiRuletaClean\RuletaClean.Infrastructure\obj\Debug\netstandard2.0\RuletaClean.Infrastructure.csproj.CopyComplete
 C:\Users\Administrador\source\repos\ApiRuletaClean\RuletaClean.Infrastructure\obj\Debug\netstandard2.0\RuletaClean.Infrastructure.dll
 C:\Users\Administrador\source\repos\ApiRuletaClean\RuletaClean.Infrastructure\obj\Debug\netstandard2.0\RuletaClean.Infrastructure.pdb
+C:\Users\ProjectSupport\Source\Repos\ApiRestRuleta\RuletaClean.Infrastructure\bin\Debug\netstandard2.0\RuletaClean.Infrastructure.deps.json
+C:\Users\ProjectSupport\Source\Repos\ApiRestRuleta\RuletaClean.Infrastructure\bin\Debug\netstandard2.0\RuletaClean.Infrastructure.dll
+C:\Users\ProjectSupport\Source\Repos\ApiRestRuleta\RuletaClean.Infrastructure\bin\Debug\netstandard2.0\RuletaClean.Infrastructure.pdb
+C:\Users\ProjectSupport\Source\Repos\ApiRestRuleta\RuletaClean.Infrastructure\bin\Debug\netstandard2.0\RuletaClean.Core.dll
+C:\Users\ProjectSupport\Source\Repos\ApiRestRuleta\RuletaClean.Infrastructure\bin\Debug\netstandard2.0\RuletaClean.Core.pdb
+C:\Users\ProjectSupport\Source\Repos\ApiRestRuleta\RuletaClean.Infrastructure\obj\Debug\netstandard2.0\RuletaClean.Infrastructure.csprojAssemblyReference.cache
+C:\Users\ProjectSupport\Source\Repos\ApiRestRuleta\RuletaClean.Infrastructure\obj\Debug\netstandard2.0\RuletaClean.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\ProjectSupport\Source\Repos\ApiRestRuleta\RuletaClean.Infrastructure\obj\Debug\netstandard2.0\RuletaClean.Infrastructure.AssemblyInfo.cs
+C:\Users\ProjectSupport\Source\Repos\ApiRestRuleta\RuletaClean.Infrastructure\obj\Debug\netstandard2.0\RuletaClean.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\ProjectSupport\Source\Repos\ApiRestRuleta\RuletaClean.Infrastructure\obj\Debug\netstandard2.0\RuletaClean.Infrastructure.csproj.CopyComplete
+C:\Users\ProjectSupport\Source\Repos\ApiRestRuleta\RuletaClean.Infrastructure\obj\Debug\netstandard2.0\RuletaClean.Infrastructure.dll
+C:\Users\ProjectSupport\Source\Repos\ApiRestRuleta\RuletaClean.Infrastructure\obj\Debug\netstandard2.0\RuletaClean.Infrastructure.pdb

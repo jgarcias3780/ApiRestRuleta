@@ -9,6 +9,9 @@ namespace RuletaClean.Core.Interfaces
         Task<IEnumerable<Ruleta>> GetRuletas();
         Task InsertRuleta(Ruleta ruleta);
         Task<bool> AbrirRuleta(int id);
-        
+        Task<Ruleta> GetRuletaById(int id);
+        Task CerrarRuleta(int id_ruleta);
+
+
     }
 }

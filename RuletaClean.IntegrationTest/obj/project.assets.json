@@ -7738,25 +7738,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Administrador\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\ProjectSupport\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Administrador\\source\\repos\\ApiRuletaClean\\RuletaClean.IntegrationTest\\RuletaClean.IntegrationTest.csproj",
+      "projectUniqueName": "C:\\Users\\ProjectSupport\\Source\\Repos\\ApiRestRuleta\\RuletaClean.IntegrationTest\\RuletaClean.IntegrationTest.csproj",
       "projectName": "RuletaClean.IntegrationTest",
-      "projectPath": "C:\\Users\\Administrador\\source\\repos\\ApiRuletaClean\\RuletaClean.IntegrationTest\\RuletaClean.IntegrationTest.csproj",
-      "packagesPath": "C:\\Users\\Administrador\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Administrador\\source\\repos\\ApiRuletaClean\\RuletaClean.IntegrationTest\\obj\\",
+      "projectPath": "C:\\Users\\ProjectSupport\\Source\\Repos\\ApiRestRuleta\\RuletaClean.IntegrationTest\\RuletaClean.IntegrationTest.csproj",
+      "packagesPath": "C:\\Users\\ProjectSupport\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ProjectSupport\\Source\\Repos\\ApiRestRuleta\\RuletaClean.IntegrationTest\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Administrador\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\ProjectSupport\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -7821,7 +7816,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
       }
     }
   }

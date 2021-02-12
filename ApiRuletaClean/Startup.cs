@@ -6,6 +6,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using RuletaClean.Core.Interfaces;
+using RuletaClean.Core.Services;
 using RuletaClean.Infrastructure.Data;
 using RuletaClean.Infrastructure.Repositories;
 using System;
@@ -31,6 +32,7 @@ namespace ApiRuletaClean
             services.AddDbContext<SqlContext>(options => options.UseSqlServer(Configuration.GetConnectionString("SqlServer")));
             services.AddTransient<IRuletaRepository, RuletaRepository>();
             services.AddTransient<IApuestaRepository, ApuestaRepository>();
+            services.AddTransient<IApuestaService, ApuestaService>();
             services.AddTransient<IUsuarioRepository, UsuarioRepository>();
             services.AddMvc().AddFluentValidation(options =>
             {

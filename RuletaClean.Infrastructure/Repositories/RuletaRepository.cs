@@ -31,14 +31,21 @@ namespace RuletaClean.Infrastructure.Repositories
             _context.Ruleta.Add(ruleta);
             await _context.SaveChangesAsync();
         }
-        public async Task<bool> AbrirRuleta(int id)
+        public async Task<bool> AbrirRuleta(int id_ruleta)
         {
-            var ruleta = await GetRuletaById(id);
+            var ruleta = await _context.Ruleta.FirstOrDefaultAsync(a => a.id_ruleta == id_ruleta);
             ruleta.estado = "abierta";
             int rowsAffected = await _context.SaveChangesAsync();
             return rowsAffected > 0;
         }
-        
+        public async Task CerrarRuleta(int id_ruleta)
+        {
+            var ruleta = await _context.Ruleta.FirstOrDefaultAsync(a => a.id_ruleta == id_ruleta);
+            ruleta.estado = "cerrado";
+            await _context.SaveChangesAsync();
+
+        }
+
 
     }
 }

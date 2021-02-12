@@ -1,25 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Administrador\\source\\repos\\ApiRuletaClean\\RuletaClean.Core\\RuletaClean.Core.csproj": {}
+    "C:\\Users\\ProjectSupport\\source\\repos\\ApiRestRuleta\\RuletaClean.Core\\RuletaClean.Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Administrador\\source\\repos\\ApiRuletaClean\\RuletaClean.Core\\RuletaClean.Core.csproj": {
+    "C:\\Users\\ProjectSupport\\source\\repos\\ApiRestRuleta\\RuletaClean.Core\\RuletaClean.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Administrador\\source\\repos\\ApiRuletaClean\\RuletaClean.Core\\RuletaClean.Core.csproj",
+        "projectUniqueName": "C:\\Users\\ProjectSupport\\source\\repos\\ApiRestRuleta\\RuletaClean.Core\\RuletaClean.Core.csproj",
         "projectName": "RuletaClean.Core",
-        "projectPath": "C:\\Users\\Administrador\\source\\repos\\ApiRuletaClean\\RuletaClean.Core\\RuletaClean.Core.csproj",
-        "packagesPath": "C:\\Users\\Administrador\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Administrador\\source\\repos\\ApiRuletaClean\\RuletaClean.Core\\obj\\",
+        "projectPath": "C:\\Users\\ProjectSupport\\source\\repos\\ApiRestRuleta\\RuletaClean.Core\\RuletaClean.Core.csproj",
+        "packagesPath": "C:\\Users\\ProjectSupport\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ProjectSupport\\source\\repos\\ApiRestRuleta\\RuletaClean.Core\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Administrador\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\ProjectSupport\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
@@ -65,7 +61,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     }
