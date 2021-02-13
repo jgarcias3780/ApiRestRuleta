@@ -4,11 +4,9 @@ using System.Threading.Tasks;
 
 namespace RuletaClean.Core.Interfaces
 {
-    public interface IRuletaRepository
+    public interface IRuletaService
     {
         Task<bool> AbrirRuleta(int id_ruleta);
-        Task CerrarRuleta(int id_ruleta);
-        Task<Ruleta> GetRuletaById(int id);
         Task<IEnumerable<Ruleta>> GetRuletas();
         Task InsertRuleta(Ruleta ruleta);
     }

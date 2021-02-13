@@ -13,17 +13,17 @@ namespace RuletaClean.Api.Controllers
     [ApiController]
     public class RuletaController : ControllerBase
     {
-        private readonly IRuletaRepository _ruletaRepository;
+        private readonly IRuletaService _ruletaService;
         private readonly IMapper _mapper;
-        public RuletaController(IRuletaRepository ruletaRepository, IMapper mapper)
+        public RuletaController(IRuletaService ruletaService, IMapper mapper)
         {
-            _ruletaRepository = ruletaRepository;
+            _ruletaService = ruletaService;
             _mapper = mapper;
         }
         [HttpGet]
         public async Task<IActionResult> GetRuletas()
         {
-            var ruletas = await _ruletaRepository.GetRuletas();
+            var ruletas = await _ruletaService.GetRuletas();
             var ruletasDto = _mapper.Map<IEnumerable<RuletaDto>>(ruletas);
             var response = new ApiResponses<IEnumerable<RuletaDto>>(ruletasDto);
             return Ok(response);
@@ -31,7 +31,7 @@ namespace RuletaClean.Api.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> AbrirRuleta(int id)
         {
-            var respuesta = await _ruletaRepository.AbrirRuleta(id);
+            var respuesta = await _ruletaService.AbrirRuleta(id);
             var response = new ApiResponses<bool>(respuesta);
             return Ok(response);
         }
@@ -39,7 +39,7 @@ namespace RuletaClean.Api.Controllers
         public async Task<IActionResult> InsertRuleta(RuletaDto ruletaDto)
         {
             var ruleta = _mapper.Map<Ruleta>(ruletaDto);
-            await _ruletaRepository.InsertRuleta(ruleta);
+            await _ruletaService.InsertRuleta(ruleta);
             ruletaDto = _mapper.Map<RuletaDto>(ruleta);
             var response = new ApiResponses<int>(ruletaDto.id_ruleta);
             return Ok(response);

@@ -31,6 +31,7 @@ namespace ApiRuletaClean
             });
             services.AddDbContext<SqlContext>(options => options.UseSqlServer(Configuration.GetConnectionString("SqlServer")));
             services.AddTransient<IRuletaRepository, RuletaRepository>();
+            services.AddTransient<IRuletaService, RuletaService>();
             services.AddTransient<IApuestaRepository, ApuestaRepository>();
             services.AddTransient<IApuestaService, ApuestaService>();
             services.AddTransient<IUsuarioRepository, UsuarioRepository>();
