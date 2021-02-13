@@ -8,6 +8,7 @@ using Microsoft.Extensions.Hosting;
 using RuletaClean.Core.Interfaces;
 using RuletaClean.Core.Services;
 using RuletaClean.Infrastructure.Data;
+using RuletaClean.Infrastructure.Filters;
 using RuletaClean.Infrastructure.Repositories;
 using System;
 
@@ -26,8 +27,12 @@ namespace ApiRuletaClean
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
-            services.AddControllers().ConfigureApiBehaviorOptions(options => {
-                //options.SuppressModelStateInvalidFilter = true;
+            services.AddControllers(options =>
+            {
+                options.Filters.Add<GlobalExceptionFilter>();
+            }).AddNewtonsoftJson(options =>
+            {
+                options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
             });
             services.AddDbContext<SqlContext>(options => options.UseSqlServer(Configuration.GetConnectionString("SqlServer")));
             services.AddTransient<IRuletaRepository, RuletaRepository>();
@@ -35,6 +40,7 @@ namespace ApiRuletaClean
             services.AddTransient<IApuestaRepository, ApuestaRepository>();
             services.AddTransient<IApuestaService, ApuestaService>();
             services.AddTransient<IUsuarioRepository, UsuarioRepository>();
+            services.AddTransient<IUnitOfWork, UnitOfWork>();
             services.AddMvc().AddFluentValidation(options =>
             {
                 options.RegisterValidatorsFromAssemblies(AppDomain.CurrentDomain.GetAssemblies());
