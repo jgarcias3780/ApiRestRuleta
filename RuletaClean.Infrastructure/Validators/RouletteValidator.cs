@@ -3,15 +3,15 @@ using RuletaClean.Core.DTOs;
 
 namespace RuletaClean.Infrastructure.Validators
 {
-    public class RuletaValidator : AbstractValidator<RuletaDto>
+    public class RouletteValidator : AbstractValidator<RouletteDto>
     {
-        public RuletaValidator()
+        public RouletteValidator()
         {
-            RuleFor(ruleta => ruleta.nombre_ruleta)
+            RuleFor(roulette => roulette.roulette_name)
                 .NotNull()
                 .Length(1, 50);
 
-            RuleFor(ruleta => ruleta.estado)
+            RuleFor(roulette => roulette.state)
                 .NotNull()
                 .Length(1, 50);
         }

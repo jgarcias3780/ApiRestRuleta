@@ -3,17 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RuletaClean.Api", "ApiRuletaClean\RuletaClean.Api.csproj", "{4F0EFE42-9020-4497-969C-1A492300B3FC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RuletaClean.Api", "ApiRuletaClean\RuletaClean.Api.csproj", "{4F0EFE42-9020-4497-969C-1A492300B3FC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RuletaClean.Core", "RuletaClean.Core\RuletaClean.Core.csproj", "{DF9E41ED-4755-4D1B-975E-E36B087429C6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RuletaClean.Core", "RuletaClean.Core\RuletaClean.Core.csproj", "{DF9E41ED-4755-4D1B-975E-E36B087429C6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RuletaClean.Infrastructure", "RuletaClean.Infrastructure\RuletaClean.Infrastructure.csproj", "{2B621676-6EF0-492F-8B49-2E7301DA9898}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{71F91E84-1852-48F8-A2F0-376B2BCB44A3}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RuletaClean.UnitTest", "RuletaClean.UnitTest\RuletaClean.UnitTest.csproj", "{3788726F-4938-40FE-B5AF-888D8E66861D}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RuletaClean.IntegrationTest", "RuletaClean.IntegrationTest\RuletaClean.IntegrationTest.csproj", "{06F1D1F9-BEAD-4A7A-AE4B-22D30C66BDBB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RuletaClean.Infrastructure", "RuletaClean.Infrastructure\RuletaClean.Infrastructure.csproj", "{2B621676-6EF0-492F-8B49-2E7301DA9898}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,21 +27,9 @@ Global
 		{2B621676-6EF0-492F-8B49-2E7301DA9898}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2B621676-6EF0-492F-8B49-2E7301DA9898}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2B621676-6EF0-492F-8B49-2E7301DA9898}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3788726F-4938-40FE-B5AF-888D8E66861D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3788726F-4938-40FE-B5AF-888D8E66861D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3788726F-4938-40FE-B5AF-888D8E66861D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3788726F-4938-40FE-B5AF-888D8E66861D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{06F1D1F9-BEAD-4A7A-AE4B-22D30C66BDBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{06F1D1F9-BEAD-4A7A-AE4B-22D30C66BDBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{06F1D1F9-BEAD-4A7A-AE4B-22D30C66BDBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{06F1D1F9-BEAD-4A7A-AE4B-22D30C66BDBB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{3788726F-4938-40FE-B5AF-888D8E66861D} = {71F91E84-1852-48F8-A2F0-376B2BCB44A3}
-		{06F1D1F9-BEAD-4A7A-AE4B-22D30C66BDBB} = {71F91E84-1852-48F8-A2F0-376B2BCB44A3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0E00E860-3454-4832-B3E1-8D8C91B8BB86}

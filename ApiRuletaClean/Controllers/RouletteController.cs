@@ -11,11 +11,11 @@ namespace RuletaClean.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class RuletaController : ControllerBase
+    public class RouletteController : ControllerBase
     {
-        private readonly IRuletaService _ruletaService;
+        private readonly IRouletteService _ruletaService;
         private readonly IMapper _mapper;
-        public RuletaController(IRuletaService ruletaService, IMapper mapper)
+        public RouletteController(IRouletteService ruletaService, IMapper mapper)
         {
             _ruletaService = ruletaService;
             _mapper = mapper;
@@ -23,25 +23,25 @@ namespace RuletaClean.Api.Controllers
         [HttpGet]
         public async Task<IActionResult> GetRuletas()
         {
-            var ruletas = await _ruletaService.GetRuletas();
-            var ruletasDto = _mapper.Map<IEnumerable<RuletaDto>>(ruletas);
-            var response = new ApiResponses<IEnumerable<RuletaDto>>(ruletasDto);
+            var ruletas = await _ruletaService.GetRoulettes();
+            var ruletasDto = _mapper.Map<IEnumerable<RouletteDto>>(ruletas);
+            var response = new ApiResponses<IEnumerable<RouletteDto>>(ruletasDto);
             return Ok(response);
         }
         [HttpGet("{id}")]
         public async Task<IActionResult> AbrirRuleta(int id)
         {
-            var respuesta = await _ruletaService.AbrirRuleta(id);
+            var respuesta = await _ruletaService.OpenRoulette(id);
             var response = new ApiResponses<bool>(respuesta);
             return Ok(response);
         }
         [HttpPost]
-        public async Task<IActionResult> InsertRuleta(RuletaDto ruletaDto)
+        public async Task<IActionResult> InsertRuleta(RouletteDto ruletaDto)
         {
-            var ruleta = _mapper.Map<Ruleta>(ruletaDto);
-            await _ruletaService.InsertRuleta(ruleta);
-            ruletaDto = _mapper.Map<RuletaDto>(ruleta);
-            var response = new ApiResponses<int>(ruletaDto.id_ruleta);
+            var ruleta = _mapper.Map<Roulette>(ruletaDto);
+            await _ruletaService.InsertRoulette(ruleta);
+            ruletaDto = _mapper.Map<RouletteDto>(ruleta);
+            var response = new ApiResponses<int>(ruletaDto.id_roulette);
             return Ok(response);
         }
         

@@ -35,11 +35,11 @@ namespace ApiRuletaClean
                 options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
             });
             services.AddDbContext<SqlContext>(options => options.UseSqlServer(Configuration.GetConnectionString("SqlServer")));
-            services.AddTransient<IRuletaRepository, RuletaRepository>();
-            services.AddTransient<IRuletaService, RuletaService>();
-            services.AddTransient<IApuestaRepository, ApuestaRepository>();
-            services.AddTransient<IApuestaService, ApuestaService>();
-            services.AddTransient<IUsuarioRepository, UsuarioRepository>();
+            services.AddTransient<IRouletteRepository, RouletteRepository>();
+            services.AddTransient<IRouletteService, RouletteService>();
+            services.AddTransient<IBetRepository, BetRepository>();
+            services.AddTransient<IBetService, BetService>();
+            services.AddTransient<IUserRepository, UserRepository>();
             services.AddTransient<IUnitOfWork, UnitOfWork>();
             services.AddMvc().AddFluentValidation(options =>
             {

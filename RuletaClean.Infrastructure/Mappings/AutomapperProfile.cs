@@ -8,12 +8,12 @@ namespace RuletaClean.Infrastructure.Mappings
     {
         public AutomapperProfile()
         {
-            CreateMap<Ruleta, RuletaDto>();
-            CreateMap<RuletaDto, Ruleta>();
-            CreateMap<Apuesta, ApuestaDto>();
-            CreateMap<ApuestaDto, Apuesta>();
-            CreateMap<Usuario, UsuarioDto>();
-            CreateMap<UsuarioDto, Usuario>();
+            CreateMap<Roulette, RouletteDto>();
+            CreateMap<RouletteDto, Roulette>();
+            CreateMap<Bet, BetDto>();
+            CreateMap<BetDto, Bet>();
+            CreateMap<User, UserDto>();
+            CreateMap<UserDto, User>();
         }
     }
 }

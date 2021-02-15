@@ -3,8 +3,8 @@ using System.Threading.Tasks;
 
 namespace RuletaClean.Core.Interfaces
 {
-    public interface IUsuarioRepository
+    public interface IUserRepository
     {
-        Task<Usuario> GetUsuarioById(int id);
+        Task<User> GetUserById(int id);
     }
 }

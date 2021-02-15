@@ -1,8 +1,5 @@
 ﻿using RuletaClean.Core.Interfaces;
 using RuletaClean.Infrastructure.Data;
-using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace RuletaClean.Infrastructure.Repositories
@@ -14,11 +11,11 @@ namespace RuletaClean.Infrastructure.Repositories
         {
             _context = context;
         }
-        public IRuletaRepository RuletaRepository => new RuletaRepository(_context);
+        public IRouletteRepository RouletteRepository => new RouletteRepository(_context);
 
-        public IApuestaRepository ApuestaRepository => new ApuestaRepository(_context);
+        public IBetRepository BetRepository => new BetRepository(_context);
 
-        public IUsuarioRepository UsuarioRepository => new UsuarioRepository(_context);
+        public IUserRepository UserRepository => new UserRepository(_context);
 
         public void Dispose()
         {

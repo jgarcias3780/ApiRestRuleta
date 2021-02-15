@@ -7,9 +7,9 @@ namespace RuletaClean.Core.Interfaces
 {
     public interface IUnitOfWork : IDisposable
     {
-        IRuletaRepository RuletaRepository { get; }
-        IApuestaRepository ApuestaRepository { get; }
-        IUsuarioRepository UsuarioRepository { get; }
+        IRouletteRepository RouletteRepository { get; }
+        IBetRepository BetRepository { get; }
+        IUserRepository UserRepository { get; }
 
         void SaveChanges();
         Task SaveChangesAsync();

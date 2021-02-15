@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace RuletaClean.Core.Exceptions
 {
@@ -10,7 +8,7 @@ namespace RuletaClean.Core.Exceptions
         {
 
         }
-        public BusinessException(string mensaje) : base(mensaje)
+        public BusinessException(string message) : base(message)
         {
 
         }
