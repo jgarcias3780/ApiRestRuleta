@@ -78,7 +78,7 @@ namespace RuletaClean.Core.Services
         {
             Random rnd = new Random();
             int winning_number = rnd.Next(37);
-            string winning_color = "";
+            string winning_color;
             if ((winning_number % 2) == 0)
                 winning_color = "rojo";
             else

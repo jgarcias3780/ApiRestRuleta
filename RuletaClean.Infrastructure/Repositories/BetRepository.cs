@@ -2,10 +2,8 @@
 using RuletaClean.Core.Entities;
 using RuletaClean.Core.Interfaces;
 using RuletaClean.Infrastructure.Data;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace RuletaClean.Infrastructure.Repositories
