@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>RuletaClean.Api</name>
+    </assembly>
+    <members>
+        <member name="M:RuletaClean.Api.Controllers.BetController.CloseBetById(System.Int32)">
+            <summary>
+            Cerrar una ruleta y realizar sorteo
+            </summary>
+            <param name="id">id de la ruleta a cerrar</param>
+            <returns></returns>
+        </member>
+        <member name="M:RuletaClean.Api.Controllers.BetController.SelectBets(RuletaClean.Core.QueryFilters.BetQueryFilter)">
+            <summary>
+            Obtener todas las apuestas con paginacion
+            </summary>
+            <param name="filters">Filtros de busqueda</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

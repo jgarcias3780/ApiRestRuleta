@@ -17,6 +17,8 @@ namespace RuletaClean.Infrastructure.Repositories
 
         public IUserRepository UserRepository => new UserRepository(_context);
 
+        public IUserLoginRepository UserLoginRepository => new UserLoginRepository(_context);
+
         public void Dispose()
         {
             if(_context!= null)

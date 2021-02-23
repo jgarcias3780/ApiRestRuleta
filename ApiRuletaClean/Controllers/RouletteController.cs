@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using RuletaClean.Api.Responses;
 using RuletaClean.Core.DTOs;
@@ -9,6 +10,8 @@ using System.Threading.Tasks;
 
 namespace RuletaClean.Api.Controllers
 {
+    [Authorize]
+    [Produces("application/json")]
     [Route("api/[controller]")]
     [ApiController]
     public class RouletteController : ControllerBase
@@ -44,6 +47,21 @@ namespace RuletaClean.Api.Controllers
             var response = new ApiResponses<int>(rouletteDto.id_roulette);
             return Ok(response);
         }
-        
+        [HttpGet]
+        [Route("Palindrome/{palabra}")]
+        public bool Palindrome(string palabra)
+        {
+            string palabraFinal = "";
+            for (int i = 1; i <= palabra.Length; i++)
+            {
+                palabraFinal += palabra[palabra.Length - i];
+            }
+            if (palabra == palabraFinal)
+            {
+                return true;
+            }
+            return false;
+        }
+
     }
 }

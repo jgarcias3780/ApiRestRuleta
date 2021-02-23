@@ -10,6 +10,7 @@ namespace RuletaClean.Core.Interfaces
         IRouletteRepository RouletteRepository { get; }
         IBetRepository BetRepository { get; }
         IUserRepository UserRepository { get; }
+        IUserLoginRepository UserLoginRepository { get; }
 
         void SaveChanges();
         Task SaveChangesAsync();

@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using RuletaClean.Core.Entities;
 using RuletaClean.Core.Interfaces;
+using RuletaClean.Core.QueryFilters;
 using RuletaClean.Infrastructure.Data;
 using System.Collections.Generic;
 using System.Linq;
@@ -43,6 +44,11 @@ namespace RuletaClean.Infrastructure.Repositories
                 _context.Entry(bet).State = EntityState.Modified;
                 await _context.SaveChangesAsync();
             }
+        }
+        public async Task<IEnumerable<Bet>> SelectBets()
+        {
+            var bets = await _context.Bet.ToListAsync();
+            return bets;
         }
     }
 }

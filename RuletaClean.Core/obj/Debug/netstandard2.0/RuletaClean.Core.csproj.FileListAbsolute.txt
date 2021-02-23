@@ -15,3 +15,4 @@ C:\Users\ProjectSupport\source\repos\ApiRestRuleta\RuletaClean.Core\obj\Debug\ne
 C:\Users\ProjectSupport\source\repos\ApiRestRuleta\RuletaClean.Core\obj\Debug\netstandard2.0\RuletaClean.Core.csproj.CoreCompileInputs.cache
 C:\Users\ProjectSupport\source\repos\ApiRestRuleta\RuletaClean.Core\obj\Debug\netstandard2.0\RuletaClean.Core.dll
 C:\Users\ProjectSupport\source\repos\ApiRestRuleta\RuletaClean.Core\obj\Debug\netstandard2.0\RuletaClean.Core.pdb
+C:\Users\ProjectSupport\source\repos\ApiRestRuleta\RuletaClean.Core\obj\Debug\netstandard2.0\RuletaClean.Core.csprojAssemblyReference.cache

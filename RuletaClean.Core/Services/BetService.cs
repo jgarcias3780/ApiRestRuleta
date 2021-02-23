@@ -1,8 +1,12 @@
-﻿using RuletaClean.Core.Entities;
+﻿using Microsoft.Extensions.Options;
+using RuletaClean.Core.CustomEntities;
+using RuletaClean.Core.Entities;
 using RuletaClean.Core.Exceptions;
 using RuletaClean.Core.Interfaces;
+using RuletaClean.Core.QueryFilters;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace RuletaClean.Core.Services
@@ -10,9 +14,11 @@ namespace RuletaClean.Core.Services
     public class BetService : IBetService
     {
         private readonly IUnitOfWork _unitOfwork;
-        public BetService(IUnitOfWork unitOfwork)
+        private readonly PaginationOptions _paginationOptions;
+        public BetService(IUnitOfWork unitOfwork, IOptions<PaginationOptions> options)
         {
             _unitOfwork = unitOfwork;
+            _paginationOptions = options.Value;
         }
 
         public async Task InsertBet(Bet apuesta)
@@ -33,6 +39,24 @@ namespace RuletaClean.Core.Services
         {
             await Lottery(id_roulette);
             return await _unitOfwork.BetRepository.SelectBetByRoulette(id_roulette);
+        }
+
+        public async Task<PagedList<Bet>> SelectBets(BetQueryFilter filters)
+        {
+            var bets = await _unitOfwork.BetRepository.SelectBets();
+            filters.pageNumber = filters.pageNumber == 0 ? _paginationOptions.DefaultPageNumber : filters.pageNumber;
+            filters.pageSize = filters.pageSize == 0 ? _paginationOptions.DefaultPageSize : filters.pageSize;
+            if (filters.id_roulette != null)
+            {
+                bets = bets.Where(e => e.id_roulette == filters.id_roulette);
+            }
+            if (filters.id_user != null)
+            {
+                bets = bets.Where(e => e.id_user == filters.id_user);
+            }
+
+            var pagedBets = PagedList<Bet>.Create(bets, filters.pageNumber, filters.pageSize);
+            return pagedBets;
         }
 
         public async Task<bool> ValidateCreditUser(Bet bet)
@@ -73,9 +97,11 @@ namespace RuletaClean.Core.Services
                 return false;
             }
         }
-        
+
         public async Task Lottery(int id_roulette)
         {
+            await _unitOfwork.RouletteRepository.CloseRoulette(id_roulette);
+
             Random rnd = new Random();
             int winning_number = rnd.Next(37);
             string winning_color;
@@ -98,7 +124,7 @@ namespace RuletaClean.Core.Services
                 element.earned_value = element.money * 1.8m;
                 await _unitOfwork.BetRepository.UpdateWinner(element.id_bet, element);
             }
-            await _unitOfwork.RouletteRepository.CloseRoulette(id_roulette);
+
         }
     }
 }

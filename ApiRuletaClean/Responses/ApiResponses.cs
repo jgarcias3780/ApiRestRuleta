@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using RuletaClean.Core.CustomEntities;
 
 namespace RuletaClean.Api.Responses
 {
@@ -12,5 +9,7 @@ namespace RuletaClean.Api.Responses
             Data = data;
         }
         public T Data { get; set; }
+
+        public MetaData Meta { get; set; }
     }
 }
